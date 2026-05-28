@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="image">
+                <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+                <img src="img/bg.jpg" alt="background">
+            </div>
+            <div class="content">
+                <div class="contentBox">
+                    <div class="title">
+                        <h1>Get iintoo it today</h1>
+                        <p>There is no charge or obligation upon registration</p>
+                    </div>
+                    <form action="">
+                        <div class="registration-with-social">
+                            <a href="#" id="registration-facebook" class="button"><img src="img/facebook.svg" alt="facebook icon">Register with Facebook</a>
+                            <a href="#" id="registration-linkedin" class="button"><img src="img/linkedin.svg" alt="linkedin icon">Register with LinkedIn</a>
+                        </div>
+                        <div class="separator">
+                            <div class="line"></div>
+                            <p>or</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="registration">
+                            <div class="registration-input">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="registration-input">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone">
+                            </div>
+                        </div>
+                        <div class="investor-type">
+                            <div class="title">
+                                <h3>What type of investor are you?</h3>
+                                <p>Select the type of investor you are below.</p>
+                            </div>
+                            <div class="type">
+                                <div class="type-list">
+                                    <div class="type-element">
+                                        <input type="radio" id="individual" name="type" value="individual" checked>
+                                        <label for="individual">Individual</label>
+                                        <img id="ic-info-individual" src="img/ic-info.svg" alt="help">
+                                    </div>
+                                    <div class="type-element">
+                                        <input type="radio" id="business" name="type" value="business">
+                                        <label for="business">Business</label>
+                                        <img id="ic-info-business" src="img/ic-info.svg" alt="help">
+                                    </div>
+                                    <div class="type-element">
+                                        <input type="radio" id="ira" name="type" value="ira">
+                                        <label for="ira">IRA</label>
+                                        <img id="ic-info-ira" src="img/ic-info.svg" alt="help">
+                                    </div>
+                                    <div class="type-element">
+                                        <input type="radio" id="trust" name="type" value="trust">
+                                        <label for="trust">Trust</label>
+                                        <img id="ic-info-trust" src="img/ic-info.svg" alt="help">
+                                    </div>
+                                </div>
+                                
+                                <div class="type-description">
+                                    <p id="type-individual-description">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</p>
+                                    <p id="type-business-description">I am investing on behalf of a business entity, corporation, partnership, or other registered organization.</p>
+                                    <p id="type-ira-description">I am investing through an Individual Retirement Account (IRA) for retirement purposes.</p>
+                                    <p id="type-trust-description">I am investing on behalf of a trust managed by a trustee or authorized representative.</p>
+                                </div>
+                            </div>
+                            <div class="policy">
+                                <div class="policyBox">
+                                    <input type="checkbox" id="policy-agreement" name="policy-agreement" value="policy-agreement">
+                                    <label for="policy-agreement">I agree to the terms and receiving notifications from iintoo <a href="#">View full terms</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" id="create-account" value="Create Account">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
