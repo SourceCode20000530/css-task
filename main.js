@@ -28,6 +28,13 @@ const typeCheck = () => {
     }
 }
 
+const typeDefault = () => {
+    type_individual_description.style.display = "none";
+    type_business_description.style.display = "none";
+    type_ira_description.style.display = "none";
+    type_trust_description.style.display = "none";
+}
+
 const typeIndividualChecked = () => {
     type_individual_description.style.display = "block";
     type_business_description.style.display = "none";
@@ -58,13 +65,13 @@ const typeTrustChecked = () => {
 
 // После загрузки контента
 document.addEventListener("DOMContentLoaded", () => {
-    typeCheck();
+    typeDefault();
 });
 
 
 // После любых изменений на странице
 document.addEventListener("change", () => {
-    typeCheck();
+    typeDefault();
 });
 
 // Наведение мыши
@@ -72,30 +79,42 @@ document.addEventListener("change", () => {
 ic_info_individual.addEventListener('mouseenter', () => {
     typeIndividualChecked();
 });
-ic_info_individual.addEventListener('mouseleave', () => {
-    typeCheck();
+type_individual_description,addEventListener('mouseenter', () => {
+    typeIndividualChecked();
+});
+type_individual_description.addEventListener('mouseleave', () => {
+    typeDefault();
 });
 
 // Business
 ic_info_business.addEventListener('mouseenter', () => {
     typeBusinessChecked();
 });
-ic_info_business.addEventListener('mouseleave', () => {
-    typeCheck();
+type_business_description.addEventListener('mouseenter', () => {
+    typeBusinessChecked();
+});
+type_business_description.addEventListener('mouseleave', () => {
+    typeDefault();
 });
 
 // IRA
 ic_info_ira.addEventListener('mouseenter', () => {
     typeIRAChecked();
 });
-ic_info_ira.addEventListener('mouseleave', () => {
-    typeCheck();
+type_ira_description.addEventListener('mouseenter', () => {
+    typeIRAChecked();
+});
+type_ira_description.addEventListener('mouseleave', () => {
+    typeDefault();
 });
 
 // Trust
 ic_info_trust.addEventListener('mouseenter', () => {
     typeTrustChecked();
 });
-ic_info_trust.addEventListener('mouseleave', () => {
-    typeCheck();
+type_trust_description.addEventListener('mouseenter', () => {
+    typeTrustChecked();
+});
+type_trust_description.addEventListener('mouseleave', () => {
+    typeDefault();
 });
