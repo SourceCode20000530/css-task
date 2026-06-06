@@ -4,7 +4,6 @@
   padding: 0;
   font-family: "Barlow", sans-serif;
   box-sizing: border-box;
-  /* background-color: #EFF6FF; */
   color: #2a4a5c;
 }
 body {
@@ -67,9 +66,6 @@ body {
   color: #7b8a92;
   font-size: 1rem;
 }
-/* .container .content .contentBox form {
-    background-color: #fff;
-} */
 .container .content .contentBox form .registration-with-social {
   width: 100%;
   display: flex;
@@ -168,7 +164,6 @@ body {
   .type
   .type-list
   .type-element {
-  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,8 +214,6 @@ body {
   position: relative;
   background-color: #fff;
   width: 50%;
-  /* box-shadow: 1px 1px 10px rgb(0 0 0 / 20%); */
-  /* margin: 5px 0 25px 0; */
   border-radius: 5px;
 }
 .container
@@ -241,8 +234,8 @@ body {
   background-color: #fff;
   padding: 10px;
   width: 200px;
-  /* border: 1px solid black; */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  border: 1px solid black;
 }
 .container .content .contentBox form .policy {
   margin: 0 0 25px 0;

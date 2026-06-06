@@ -79,8 +79,8 @@ document.addEventListener("change", () => {
 ic_info_individual.addEventListener('mouseenter', () => {
     typeIndividualChecked();
 });
-type_individual_description,addEventListener('mouseenter', () => {
-    typeIndividualChecked();
+ic_info_individual.addEventListener('mouseleave', () => {
+    typeDefault();
 });
 type_individual_description.addEventListener('mouseleave', () => {
     typeDefault();
@@ -90,8 +90,8 @@ type_individual_description.addEventListener('mouseleave', () => {
 ic_info_business.addEventListener('mouseenter', () => {
     typeBusinessChecked();
 });
-type_business_description.addEventListener('mouseenter', () => {
-    typeBusinessChecked();
+ic_info_business.addEventListener('mouseleave', () => {
+    typeDefault();
 });
 type_business_description.addEventListener('mouseleave', () => {
     typeDefault();
@@ -101,8 +101,8 @@ type_business_description.addEventListener('mouseleave', () => {
 ic_info_ira.addEventListener('mouseenter', () => {
     typeIRAChecked();
 });
-type_ira_description.addEventListener('mouseenter', () => {
-    typeIRAChecked();
+ic_info_ira.addEventListener('mouseleave', () => {
+    typeDefault();
 });
 type_ira_description.addEventListener('mouseleave', () => {
     typeDefault();
@@ -112,8 +112,8 @@ type_ira_description.addEventListener('mouseleave', () => {
 ic_info_trust.addEventListener('mouseenter', () => {
     typeTrustChecked();
 });
-type_trust_description.addEventListener('mouseenter', () => {
-    typeTrustChecked();
+ic_info_trust.addEventListener('mouseleave', () => {
+    typeDefault();
 });
 type_trust_description.addEventListener('mouseleave', () => {
     typeDefault();
